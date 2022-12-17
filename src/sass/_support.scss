@@ -1,0 +1,106 @@
+@function str-replace($string, $search, $replace: "") {
+
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+
+// Перевод из px в rem
+
+$maxWidthContainer: 1210;
+$maxWidth: 1980;
+
+@function rem($size) {
+  @return calc($size / 14)+rem
+}
+
+@mixin adaptiveValue($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+  @if $type==1 {
+      #{$property}: $startSize + px;
+      @media (max-width:#{$maxWidthContainer + px}){
+          #{$property} : calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+      }
+  } @else if type==2 {
+      #{$property}: $startSize + px;
+      @media (max-width:#{$maxWidthContainer + px}){
+          #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+      }
+  } @else {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+  }
+}
+
+// Быстрое подключение шрифтов 
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-weight: $weight;
+    font-style: $style;
+
+    // font-display: block;
+    src: $src;
+  }
+}
+
+// Fonts
+@include font-face('Roboto', '../fonts/Roboto/Roboto-Bold', bold, normal, ttf);
+@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', normal, normal, ttf);
+@include font-face('PT Sans', '../fonts/Roboto/PT_Sans', bold, normal, ttf);
+@include font-face('PT Sans', '../fonts/Roboto/PT_Sans', normal, normal, ttf);
+@include font-face('Source Sans 3', '../fonts/Source_Sans_3/SourceSans3-VariableFont_wght', normal, normal, ttf);
+
+
+
+// Vars
+
+// Путь к спрайту для конкатенации
+
+$sprite: "../svg/dest/stack/sprite.svg#";
+
+
+// Mixins
+
+@mixin title {
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+
+@mixin btn {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    &:focus {
+        outline: none;
+    }
+}
+
+// Переменные 
+
+$black: #070707;
