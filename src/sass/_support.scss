@@ -12,8 +12,8 @@
 
 // Перевод из px в rem
 
-$maxWidthContainer: 1210;
-$maxWidth: 1980;
+$maxWidthContainer: 1210px;
+$maxWidth: 1980px;
 
 @function rem($size) {
   @return calc($size / 14)+rem
@@ -70,8 +70,8 @@ $maxWidth: 1980;
 // Fonts
 @include font-face('Roboto', '../fonts/Roboto/Roboto-Bold', bold, normal, ttf);
 @include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', normal, normal, ttf);
-@include font-face('PT Sans', '../fonts/Roboto/PT_Sans', bold, normal, ttf);
-@include font-face('PT Sans', '../fonts/Roboto/PT_Sans', normal, normal, ttf);
+@include font-face('PT Sans', '../fonts/PT_Sans/PTSans-Bold', bold, normal, ttf);
+@include font-face('PT Sans', '../fonts/PT_Sans/PTSans-Regular', normal, normal, ttf);
 @include font-face('Source Sans 3', '../fonts/Source_Sans_3/SourceSans3-VariableFont_wght', normal, normal, ttf);
 
 

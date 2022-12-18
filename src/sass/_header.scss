@@ -1,6 +1,9 @@
 .header {
     font-size: 18px;
+    padding: rem(30) 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     &_white {
+        border: none;
         .header__enter-icon path {
             color: #fff;
         }
@@ -28,11 +31,11 @@
 
     &__col {
         &_logo {
-            flex: 0 0 18%;
+            flex: 0 0 25%;
             margin: 0 60px 0 0;
         }
         &_menu {
-            flex: 0 1 19.777%;
+            flex: 0 1 12.777%;
             justify-content: flex-start;
         }
         &_enter {
@@ -52,10 +55,6 @@
     &__menu {
         display: flex;
         list-style: none;
-    }
-
-    .header__menu:hover ~ .header__menu-bg {
-        display: block;
     }
 
     &__enter {
@@ -78,77 +77,72 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #000;
-        display: none;
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     .burger-menu{
-        display:block;
+        display:none;
         position:absolute;
-        top:33px;
-        right:15px;
+        margin: -23px 0 0 0;
+        right:30px;
         width:30px;
+        z-index: 2;
         height:18px;
         cursor:pointer;
-        z-index:5
-    }
-    .burger-menu span{
-        -webkit-transition:.3s;
-        transition:.3s;
-        top:8px;
-        left:0;
-        position:absolute;
-        width:100%;
-        height:2px;
-    }
-    .burger-menu span:first-child{
-        top:0
-    }
-    .burger-menu span:last-child{
-        top:auto;
-        bottom:0
-    }
-    .burger-menu.active span{
-        -webkit-transform:scale(0);
-        transform:scale(0);
-        background-color:#000
-    }
-    .burger-menu.active span:first-child{
-        -webkit-transform:rotate(-45deg);
-        transform:rotate(-45deg);
-        top:8px
-    }
-    .burger-menu.active span:last-child{
-        -webkit-transform:rotate(45deg);
-        transform:rotate(45deg);
-        bottom:8px
-    }
+        z-index:5;
+        &__input {
+            opacity: 0;
+            left: -100%;
+            display: none;
+        }
 
+        span {
+            -webkit-transition:.3s;
+            transition:.3s;
+            top:8px;
+            left:0;
+            position:absolute;
+            width:100%;
+            height:2px;
+            &:first-child {
+                top: 0;
+            }
+            &:last-child {
+                top: auto;
+                bottom: 0;
+            }
+        }
+        &__input:checked + .burger-menu span{
+            -webkit-transform:scale(0);
+            transform:scale(0);
+            background-color:#000
+        }
 
-    .burger-menu:active ~ .header__menu-bg {
-        display: block;
+        &__input:checked + .burger-menu span:first-child{
+            -webkit-transform:rotate(-45deg);
+            transform:rotate(-45deg);
+            top:8px
+        }
+        &__input:checked + .burger-menu span:last-child{
+            -webkit-transform:rotate(45deg);
+            transform:rotate(45deg);
+            bottom:8px
+        }
+        &__input:checked + .burger-menu + .header__menu {
+            opacity: 1;
+            display: block;
+        }
+        &__input:checked + .burger-menu + .header__menu + .header__menu-bg {
+            opacity: 1;
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
     }
-    .burger-menu:active ~ .header__menu {
-        left: 70%;
-    }
-
-    .burger-menu:hover ~ .header__menu-bg {
-        display: block;
-    }
-
-    .burger-menu:hover ~ .header__menu{
-        left: 70%;
-    }
-    
-    
-}
-.burger-menu {
 }
 .header-menu {
-
-    &__body {
-    }
-
     &__list {
         display: flex;
         list-style: none;
@@ -175,19 +169,6 @@
 
 }
 
-
-@media (max-width:1200px){
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (max-width:860px){
-    html {
-        font-size: 8px;
-    }
-}
-
 @media (max-width:680px){
     .header{ 
 
@@ -197,16 +178,26 @@
 
         &__menu {
             position: absolute;
+            z-index: 1;
             width: 100%;
             height: 100%;
             top: 0;
-            left: -100%;
+            opacity: 0;
+            display: none;
             background-color: #fff;
+            transition: .3s;
+        }
+
+        .burger-menu {
+            display: block;
+            &__input {
+                display: block;
+            }
         }
 
         .header-menu {
             &__list {
-                padding: 111px 0 0 0;
+                padding: 111px 0 0 20px;
                 flex-direction: column;
             }
             &__item {

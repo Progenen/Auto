@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <header class="header header_dark">
+            <header class="header header_white">
                 <div class="container">
                     <div class="row">
                         <div class="header__col header__col_logo">
@@ -21,12 +21,12 @@
                             </div>
                         </div>
                         <div class="header__col header__col_menu">
-                            <div class='menu__icon burger-menu'>
+                            <input class="burger-menu__input" type="checkbox" id="burgerMenu">
+                            <label class='menu__icon burger-menu' for="burgerMenu">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </div>
-                            <div class="header__menu-bg"></div>
+                            </label>
                             <div class="header__menu">
                                 <nav class='header-menu__body'>
                                     <ul class='header-menu__list'>
@@ -36,6 +36,8 @@
                                     </ul>
                                 </nav>
                             </div>
+                            
+                                <div class="header__menu-bg"></div>
                         </div>
                         <div class="header__col header__col_enter">
                             <div class="header__enter">
