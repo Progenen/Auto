@@ -1,0 +1,61 @@
+.home-question {
+    padding: rem(90) 0;
+    &__text {
+        font-size: 14px;
+        margin-top: 50px;
+        &:first-child {
+            margin-top: 0;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../images/icons/home-page/tripledot.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 30px;
+            height: 5.8px;
+            top: 5px;
+        }
+        &_q {
+            max-width: 515px;
+            margin-left: auto;
+            width: 100%;
+            position: relative;
+            &::before {
+                right: -30px;
+            }
+        }
+
+        &_a {
+            text-align: left;
+            max-width: 1031px;
+            width: 100%;
+            margin-left: auto;
+            position: relative;
+            &::before {
+                left: -58px;
+            }
+        }
+    }
+}
+
+@media (max-width:1250px){
+    .home-question {
+        &__text {
+            &_q {
+                max-width: 415px;
+                &::before {
+                    right: 0;
+                }
+            }
+            &_a {
+                max-width: 800px;
+                padding: 0 0 0 50px;
+                &::before {
+                    left: 0;
+                }
+            }
+        }
+    }
+}

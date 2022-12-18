@@ -2,7 +2,6 @@
     background-color: #F2EFE9;
     padding: rem(90) 0;
     &__title {
-        line-height: 52px;
 
         span {
             background-color: #000F20;
@@ -13,14 +12,41 @@
     }
 
     &__items {
+        padding: rem(45) 0;
+        flex-direction: column;
     }
 
     &__item {
+        display: flex;
+        align-items: center;
+        flex: 0 1 24%;
+        min-width: 200px;
     }
 
     &__icon {
+        margin: 0 19px 0 0;
     }
 
     &__text {
+        max-width: 272px;
+        width: 100%;
+    }
+
+    &__form {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media (max-width:680px){
+    .home-problems {
+        &__form {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__form-btn {
+            margin: 20px 0 0 0;
+            max-width: 160px;
+            padding: 12px 0;
+        }
     }
 }
