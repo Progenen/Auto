@@ -1,0 +1,42 @@
+.check-main {
+    padding: rem(45) 0;
+    &__title {
+    }
+
+    &__form {
+        margin: rem(45) 0 0 0;
+    }
+
+    &__form-input {
+        background-color: #F2EFE9;
+    }
+
+    &__form-btn {
+    }
+}
+
+.check-rep {
+    padding-bottom: rem(90);
+    &__title {
+        margin-bottom: rem(45);
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:530px){
+    .check-main {
+        padding-bottom: 70px;
+    }
+    .check-main__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .check-main__form-btn {
+        margin: 30px 0 0 0;
+    }
+}

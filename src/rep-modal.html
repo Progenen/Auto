@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto | Development Version</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header header_dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="header__col header__col_logo">
+                            <div class="header__logo">
+                                <img src="images/logo.png" alt="логотип">
+                            </div>
+                        </div>
+                        <div class="header__col header__col_menu">
+                            <input class="burger-menu__input" type="checkbox" id="burgerMenu">
+                            <label class='menu__icon burger-menu' for="burgerMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <div class="header__menu">
+                                <nav class='header-menu__body'>
+                                    <ul class='header-menu__list'>
+                                        <li class='header-menu__item'><a href='#' class='header-menu__link'>FAQ</a></li>
+                                        <li class='header-menu__item'><a href='#' class='header-menu__link'>КОНТАКТЫ</a>
+                                        </li>
+                                        <li class='header-menu__item header-menu__item_mob'><a href='#'
+                                                class='header-menu__link'>профиль</a></li>
+                                    </ul>
+                                    <ul class="header-menu__info">
+                                        <li class="header-menu__info-item">
+                                            <a href="tel:89990000000" class="header-menu__info-link">89990000000</a>
+                                        </li>
+                                        <li class="header-menu__info-item">
+                                            <a href="mailto:1@m.ru" class="header-menu__info-link">1@m.ru</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__menu-bg"></div>
+                        </div>
+                        <div class="header__col header__col_enter">
+                            <div class="header__enter">
+                                <svg class="header__enter-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 10.625C9.0111 10.625 8.0444 10.3318 7.22215 9.78235C6.39991 9.23294 5.75904 8.45205 5.3806 7.53842C5.00217 6.62479 4.90315 5.61946 5.09608 4.64955C5.289 3.67965 5.76521 2.78873 6.46447 2.08947C7.16373 1.39021 8.05465 0.914002 9.02455 0.721076C9.99446 0.52815 10.9998 0.627166 11.9134 1.0056C12.8271 1.38404 13.6079 2.02491 14.1574 2.84715C14.7068 3.6694 15 4.6361 15 5.625C15 6.95109 14.4732 8.22285 13.5355 9.16054C12.5979 10.0982 11.3261 10.625 10 10.625ZM10 1.875C9.25832 1.875 8.5333 2.09494 7.91661 2.50699C7.29993 2.91905 6.81928 3.50472 6.53545 4.18994C6.25163 4.87516 6.17736 5.62916 6.32206 6.35659C6.46675 7.08402 6.8239 7.75221 7.34835 8.27665C7.8728 8.8011 8.54098 9.15825 9.26841 9.30295C9.99584 9.44764 10.7498 9.37338 11.4351 9.08955C12.1203 8.80572 12.706 8.32508 13.118 7.70839C13.5301 7.09171 13.75 6.36668 13.75 5.625C13.75 4.63044 13.3549 3.67661 12.6517 2.97335C11.9484 2.27009 10.9946 1.875 10 1.875Z" />
+                                    <path
+                                        d="M14.375 19.375H5.625C4.7962 19.375 4.00134 19.0458 3.41529 18.4597C2.82924 17.8737 2.5 17.0788 2.5 16.25V13.75C2.50002 13.6415 2.52826 13.5349 2.58196 13.4407C2.63566 13.3465 2.71295 13.2678 2.80625 13.2125L5.93125 11.3375C6.07224 11.2738 6.23186 11.2646 6.37922 11.3118C6.52658 11.359 6.6512 11.4591 6.72896 11.5929C6.80673 11.7267 6.83212 11.8845 6.80022 12.0359C6.76831 12.1873 6.68138 12.3215 6.55625 12.4125L3.75 14.1062V16.25C3.75 16.7473 3.94754 17.2242 4.29917 17.5758C4.65081 17.9275 5.12772 18.125 5.625 18.125H14.375C14.8723 18.125 15.3492 17.9275 15.7008 17.5758C16.0525 17.2242 16.25 16.7473 16.25 16.25V14.1062L13.4312 12.4125C13.3516 12.3765 13.2803 12.3241 13.2221 12.2589C13.1639 12.1936 13.1201 12.1168 13.0934 12.0335C13.0667 11.9502 13.0579 11.8623 13.0673 11.7754C13.0768 11.6884 13.1044 11.6044 13.1483 11.5288C13.1923 11.4532 13.2516 11.3877 13.3225 11.3365C13.3934 11.2852 13.4742 11.2494 13.5598 11.2314C13.6453 11.2134 13.7337 11.2135 13.8193 11.2318C13.9048 11.25 13.9855 11.2861 14.0562 11.3375L17.1812 13.2125C17.2769 13.2662 17.3567 13.3442 17.4126 13.4386C17.4686 13.5329 17.4987 13.6403 17.5 13.75V16.25C17.5 17.0788 17.1708 17.8737 16.5847 18.4597C15.9987 19.0458 15.2038 19.375 14.375 19.375Z" />
+                                </svg>
+                                вход
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="rep-report">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="title title_bold title_dark">
+                            Пример отчета
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="rep-report__info">
+                            <div class="rep-report__info-header">
+                                <h2 class="rep-report__info-title title title_bold title_dark">
+                                    Ford Focus, 2011
+                                </h2>
+                                <div class="rep-report__info-date">
+                                    Отчёт от 23 ноября 2021
+                                </div>
+                            </div>
+                            <div class="rep-report__info-body">
+                                <ul class="rep-report__info-list">
+                                    <li class="rep-report__info-item">
+                                        Госномер: ЕМ50377
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        VIN: X9FSXXXXXXXXXX603
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        Номер двигателя: XXXX603
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        Номер кузова: X9FSXXXXXXXXXX603
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        Год выпуска: 2011
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        Тип ТС: Легковые автомобилиуниверсал (В)
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        Цвет: ЖЕЛТЫЙ
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        Объём двигателя: 1596
+                                    </li>
+                                    <li class="rep-report__info-item">
+                                        Мощность: 99 л.с
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="rep-report__title title title_bold title_dark rep-report__osago-title">
+                            Информация об ОСАГО
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="info-list rep-report__osago-list">
+                            <li class="rep-report__info-item info-list__item">
+                                Владелец: ОБЩЕСТВО С ОГРАНИЧЕННОИ ОТВЕТСТВЕННОСТЬЮ НЖТЮГ, ИНН 7719730841
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Страхователь: ОБЩЕСТВО С ОГРАНИЧЕННОИ ОТВЕТСТВЕННОСТЬЮ НЖТЮГ, ИНН 7719730841
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Страховщик: ПАО СК "Росгосстрах"
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Полис: ССС 0318529048
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Статус: Прекратил действие
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Цель: Такси
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Ограничения: Не ограничен список лиц, допущенных к управлению
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                КБМ: 1.00
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Страховая сумма: 11741.40 руб.
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Регион: г Москва
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Прицеп: Нет
+                            </li>
+                            <li class="rep-report__info-item info-list__item">
+                                Следует к месту регистрации: Нет
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                При осмотре автомобиля всегда сверяйте данные ПТС и VIN с указанными в отчёте.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="title title_bold title_dark title_nof">
+                            Владельцы
+                        </h2>
+                    </div>
+                    <div class="row rep-report__cards">
+                        <div class="rep-report__card">
+                            <h3 class="rep-report__card-title">
+                                1 владелец
+                            </h3>
+                            <p class="rep-report__card-text">
+                                Период владения: 25 августа 2011 - 11 декабря 2014
+                                Срок владения: 3 года 3 месяца 19 дней
+                                Тип владельца: Юридическое лицо
+                                Причина: первичная регистрация
+                            </p>
+                        </div>
+                        <div class="rep-report__card">
+                            <h3 class="rep-report__card-title">
+                                2 владелец
+                            </h3>
+                            <p class="rep-report__card-text">
+                                Период владения: 25 августа 2011 - 11 декабря 2014
+                                Срок владения: 3 года 3 месяца 19 дней
+                                Тип владельца: Юридическое лицо
+                                Причина: первичная регистрация
+                            </p>
+                        </div>
+                        <div class="rep-report__card">
+                            <h3 class="rep-report__card-title">
+                                3 владелец
+                            </h3>
+                            <p class="rep-report__card-text">
+                                Период владения: 25 августа 2011 - 11 декабря 2014
+                                Срок владения: 3 года 3 месяца 19 дней
+                                Тип владельца: Юридическое лицо
+                                Причина: первичная регистрация
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                Будьте осторожны, если автомобилем владело юридическое лицо. Транспортное средство могло
+                                использоваться в таскопарке или каршеринге. Владельцы обычно специально делают дубликат ПТС,
+                                чтобы
+                                скрыть из истории владения юридических лиц.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="title title_bold title_dark title_nof">
+                            Ограничения ГИБДД
+                        </h2>
+                    </div>
+                    <div class="row">
+                        Ограничения не найдены
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                Запрет регистрационных действий на машину накладывается, если у автовладельца есть
+                                неоплаченные
+                                штрафы и налоги, либо если имущество стало предметом спора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="title title_bold title_dark title_nof">
+                            Розыск
+                        </h2>
+                    </div>
+                    <div class="row">
+                        Сведения о розыске не найдены
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                Покупка разыскиваемого автомобиля грозит тем, что его отберут в ГИБДД при регистрации, и
+                                пока будет
+                                идти следствие, а это может затянуться на долгий срок, автомобиль будет стоять на
+                                штрафплощадке.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row rep-report__cards">
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                14.10.2019 12:20
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Тип происшествия: Столкновение
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Состояние авто после ДТП: Повреждено
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Регион: Москва
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Причина: первичная регистрация
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                14.10.2019 12:20
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Тип происшествия: Столкновение
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Состояние авто после ДТП: Повреждено
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Регион: Москва
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Причина: первичная регистрация
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                14.10.2019 12:20
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Тип происшествия: Столкновение
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Состояние авто после ДТП: Повреждено
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Регион: Москва
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Причина: первичная регистрация
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                14.10.2019 12:20
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Тип происшествия: Столкновение
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Состояние авто после ДТП: Повреждено
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Регион: Москва
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Причина: первичная регистрация
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="row">
+                        <h2 class="title title_bold title_dark title_nof">
+                            Пробег
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <p class="text">Пробег мог быть скручен</p>
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                В данном блоке отображаются данные о прохождении техосмотра на основании данных
+                                диагностических карт
+                                ТС.
+                                Срок прохождения технического осмотра для автомобилей категории «B»: — первые четыре года —
+                                не
+                                требуется; — возраст от 4 до 10 лет — каждые 2 года; — старше 10 лет — ежегодно.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row rep-report__cards">
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                1 января 2012
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Пробег: 1 км
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Действителен: До 6 сентября 2012
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Номер диагностической карты: 201209181744016537123
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                1 января 2012
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Пробег: 1 км
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Действителен: До 6 сентября 2012
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Номер диагностической карты: 201209181744016537123
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                1 января 2012
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Пробег: 1 км
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Действителен: До 6 сентября 2012
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Номер диагностической карты: 201209181744016537123
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rep-report__card">
+                            <div class="rep-report__card-date">
+                                1 января 2012
+                            </div>
+                            <div class="rep-report__card-text">
+                                <ul class="rep-report__card-list">
+                                    <li class="rep-report__card-list-item">
+                                        Пробег: 1 км
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Действителен: До 6 сентября 2012
+                                    </li>
+                                    <li class="rep-report__card-list-item">
+                                        Номер диагностической карты: 201209181744016537123
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="title title_bold title_dark title_nof">
+                            Коммерческое использование
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <p class="text">Найдены сведения об использовании в такси</p>
+                    </div>
+                    <div class="row">
+                        <ul class="info-list">
+                            <li class="info__list-item">
+                                1. Использование в такси
+                            </li>
+                            <li class="info__list-item">
+                                Общество с ограниченной ответственностью «НЖТ-ЮГ»
+                            </li>
+                            <li class="info__list-item">
+                                ИНН: 7719730841
+                            </li>
+                            <li class="info__list-item">
+                                МСК 0007777
+                            </li>
+                            <li class="info__list-item">
+                                Статус: Прекращено
+                            </li>
+                            <li class="info__list-item">
+                                Город: Москва
+                            </li>
+                            <li class="info__list-item">
+                                Дата начала использования: 13.09.2011
+                            </li>
+                            <li class="info__list-item">
+                                Дата окончания использования: 12.09.2016
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                Данные представлены из региональных баз по регистрации автомобиля в качестве такси.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="title title_bold title_dark title_nof">
+                            Залог
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <p class="text">
+                            Информация о залоге не найдена
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                Если заложенное авто продадут без согласия банка, сделку могут признать недействительной, а
+                                машину —
+                                забрать. Перед покупкой убедитесь, что продавец погасил долг.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="title title_bold title_dark title_nof">
+                            Лизинг
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <p class="text">
+                            Информация о лизинге не найдена
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="alert">
+                            <p class="alert__text">
+                                Покупка авто, которое находится в лизинге, сопровождается рисками. Например, на ТС могут
+                                быть
+                                ограничения ГИБДД. Купив такое авто, новый владелец не сможет зарегистрировать т/с в
+                                автоинспекции.
+                                Лизинговая компания может изъять автомобиль через суд, если бывший владелец перестанет
+                                выплачивать
+                                лизинговые взносы.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rep-buy subscr">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="title title_bold title_dark subscr__title">
+                            Купить отчет
+                        </h2>
+                    </div>
+                    <form class="rep-buy__form subscr__form">
+                        <div class="row rep-buy__cards subscr__cards">
+                            <input type="radio" name="sub" class="rep-buy__card-checkbox subscr__card-checkbox"
+                                id="sub1">
+                            <label for="sub1" class="rep-buy__card subscr__card">
+                                <div class="rep-buy__card-header subscr__card-header">
+
+                                    <div class="rep-buy__card-title subscr__card-title">
+                                        Подписка «Профи»
+                                    </div>
+                                </div>
+                                <div class="rep-buy__card-body subscr__card-body">
+
+                                    <div class="rep-buy__card-price subscr__card-price">
+                                        1₽<span>/первый день</span>
+                                    </div>
+                                    <div class="rep-buy__card-descr subscr__card-descr">
+                                        Далее 690 ₽ / 7 дней за 15 отчетов
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="sub" class="rep-buy__card-checkbox subscr__card-checkbox"
+                                id="sub2">
+                            <label for="sub2" class="rep-buy__card subscr__card">
+                                <div class="rep-buy__card-header subscr__card-header">
+
+                                    <div class="rep-buy__card-title subscr__card-title">
+                                        Один отчет
+                                    </div>
+                                </div>
+                                <div class="rep-buy__card-body subscr__card-body">
+
+                                    <div class="rep-buy__card-price subscr__card-price">
+                                        99₽
+                                    </div>
+                                    <div class="rep-buy__card-descr subscr__card-descr">
+                                        Для проверки одного ТС
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="radio" name="sub" class="rep-buy__card-checkbox subscr__card-checkbox"
+                                id="sub3">
+                            <label for="sub3" class="rep-buy__card subscr__card">
+                                <div class="rep-buy__card-header subscr__card-header">
+
+                                    <div class="rep-buy__card-title subscr__card-title">
+                                        Пакет из 5 отчетов
+                                    </div>
+                                </div>
+                                <div class="rep-buy__card-body subscr__card-body">
+
+                                    <div class="rep-buy__card-price subscr__card-price">
+                                        369₽
+                                    </div>
+                                    <div class="rep-buy__card-descr subscr__card-descr">
+                                        Один отчет за 74 ₽
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="rep-buy__agree subscr__agree">
+                            <div class="rep-buy__agree-wrapper subscr__agree-wrapper">
+                                <div class="rep-buy__agree-check subscr__agree-check check">
+                                    <input type="checkbox"
+                                        class="rep-buy__agree-check-input subscr__agree-check-input check__input"
+                                        id="subCheck1"></input>
+                                    <span
+                                        class="rep-buy__agree-check-custom subscr__agree-check-custom check__custom"></span>
+                                </div>
+                                <label for="subCheck1">Соглашаюсь с Политикой конфиденциальности и обработкой
+                                    персональных
+                                    данных</label>
+                            </div>
+                            <div class="rep-buy__agree-wrapper subscr__agree-wrapper">
+                                <div class="rep-buy__agree-check subscr__agree-check check">
+                                    <input type="checkbox"
+                                        class="rep-buy__agree-check-input subscr__agree-check-input check__input"
+                                        id="subCheck2"></input>
+                                    <span
+                                        class="rep-buy__agree-check-custom subscr__agree-check-custom check__custom"></span>
+                                </div>
+                                <label for="subCheck2">Соглашаюсь тарифами сервиса и условиями использования, ознакомлен
+                                    с
+                                    периодическими списаниями 690 рублей в неделю за 15 отчетов об автомобиле при
+                                    оформлении
+                                    подписки за 1 рубль на 1 день, далее 690 рублей в неделю</label>
+                            </div>
+                        </div>
+                        <button class="rep-buy__btn subscr__btn btn btn_dark" type="submit">КУПИТЬ</button>
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <nav class="footer__menu">
+                        <ul class='footer-menu__list'>
+                            <li class='footer-menu__item'><a href='#' class='footer-menu__link'>Политика
+                                    конфиденциальности</a></li>
+                            <li class='footer-menu__item'><a href='#' class='footer-menu__link'>Обработка персональных
+                                    данных</a></li>
+                            <li class='footer-menu__item'><a href='#' class='footer-menu__link'>Оферта</a></li>
+                            <li class='footer-menu__item'><a href='#' class='footer-menu__link'>Тарифы</a></li>
+                            <li class='footer-menu__item'><a href='#' class='footer-menu__link'>Отменить подписку</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+   
+</body>
+
+</html>

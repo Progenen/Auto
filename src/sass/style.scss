@@ -10,4 +10,29 @@
 @import "pages/home-page/home-problems";
 @import "pages/home-page/home-question";
 @import "pages/home-page/home-report";
+@import "pages/home-page/home-questions";
+@import "pages/home-page/home-contacts";
+@import "pages/rep-page/rep-reports";
+@import "pages/politics-page";
+@import "pages/registration-page.scss";
+@import "pages/check-page";
 @import "footer";
+
+// sub-canc
+
+.sub-canc-main {
+    padding: rem(74) 0 rem(90) 0;
+    &__title {
+    }
+
+    &__alert {
+        margin: 34px 0 0 0;
+        padding: rem(60);
+    }
+
+    &__alert-text {
+        max-width: 220px;
+        font-size: rem(30);
+    }
+}
+

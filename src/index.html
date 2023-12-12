@@ -1,4 +1,492 @@
-@@include('./parts/header.html')
-@@include('./parts/home-page.html')
-</div>
-@@include('./parts/footer.html')
+@@include('parts/header.html', {
+    "theme": "dark"
+})
+
+
+            <section class="home-offer">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="home-offer__title title title_bold title_white">
+                            Проверьте историю автомобиля во избежание рисков!
+                        </h1>
+                        <p class="home-offer__descr">
+                            Проверить по госномеру, VIN-коду или номеру кузова
+                        </p>
+                        <form action="#" class="home-offer__form">
+                            <input type="text" class="input home-offer__form-input check-form__input"
+                                placeholder="Введите госномер, VIN или номер кузова">
+                            <button class="home-offer__form-btn check-form__btn btn btn_dark"
+                                type="submit">ПРОВЕРИТЬ</button>
+                        </form>
+                        <ul class='home-offer__menu'>
+                            <li class='home-offer__item'><a href='#' class='home-offer__link'>ДТП</a></li>
+                            <li class='home-offer__item'><a href='#' class='home-offer__link'>РОЗЫСК</a></li>
+                            <li class='home-offer__item'><a href='#' class='home-offer__link'>ОБРЕМЕНЕНИЯ</a></li>
+                            <li class='home-offer__item'><a href='#' class='home-offer__link'>ТЕХ. ОБСЛУЖИВАНИЕ</a></li>
+                            <li class='home-offer__item'><a href='#' class='home-offer__link'>ИСПОЛЬЗОВАНИЕ В ТАКСИ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="home-rep">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="title title_md title_dark">
+                            В полный отчет входит:
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="home-rep__items">
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/driver.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    История смены владельцев авто
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/dtp.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    История участия в ДТП
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/reg.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    История регистрации автомобиля
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/mglass.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Нахождение авто в розыске
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/court.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Наличие обременений на автомобиль
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/mileage.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Пробег транспортного средства
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/to.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    История прохождения ТО
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/tm.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Таможенные сведения
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/taxi.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Использование в таксопарках
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row home-rep__sec">
+                        <h2 class="title title_md title_dark">
+                            Информация берется </br>
+                            из официальных источников:
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="home-rep__items">
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/gibbd.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    ГИБДД
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/dillers.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Автодилеры
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/court.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    ФССП
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/repair.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    ЕАИСТО
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/bank.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Кредитные организации, банки
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/judge.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Судебные и таможенные органы
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/customs.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Федеральная таможенная служба РФ
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/notary.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Нотариальная палата
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/insc.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Страховые компании
+                                </p>
+                            </div>
+                            <div class="home-rep__item">
+                                <div class="home-rep__item-img">
+                                    <img src="images/icons/home-page/advert.svg" class="home-rep__item-icon">
+                                </div>
+                                <p class="home-rep__items-text">
+                                    Доски объявлений
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home-problems">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="home-problems__title title title_md title_dark">
+                            Наиболее распространенные проблемы </br>
+                            при покупке транспортного средства с пробегом
+                        </h2>
+                    </div>
+                    <div class="row home-problems__items">
+                        <div class="home-problems__item">
+                            <div class="home-problems__icon">
+                                <img src="images/icons/home-page/mileage2.svg">
+                            </div>
+                            <p class="home-problems__text">Скрученный пробег,
+                                проблемы с кузовом и двигателем
+                            </p>
+                        </div>
+                        <div class="home-problems__item">
+                            <div class="home-problems__icon">
+                                <img src="images/icons/home-page/tools.svg">
+                            </div>
+                            <p class="home-problems__text">
+                                Вложение больших средств в ремонт купленного транспортного средства
+                            </p>
+                        </div>
+                        <div class="home-problems__item">
+                            <div class="home-problems__icon">
+                                <img src="images/icons/home-page/docs.svg">
+                            </div>
+                            <p class="home-problems__text">
+                                Наличие юридических проблем с авто (скрытые кредиты, перебитые номера VIN и др.)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="home-problems__title title title_md title_dark">Подробный отчет об истории
+                            транспортного
+                            средства </br> <span>за 99 рублей</span></div>
+                    </div>
+                    <div class="row">
+
+                        <form action="#" class="home-problems__form check-form">
+                            <input type="text" class="input home-problems__form-input check-form__input"
+                                placeholder="Введите госномер, VIN или номер кузова">
+                            <button class="home-problems__form-btn btn btn_dark" type="submit">ПРОВЕРИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="home-question">
+                <div class="container">
+                    <p class="home-question__text home-question__text_q">
+                        На сайте ГИБДД.РФ можно бесплатно проверить транспортное средство. <br>
+                        Почему подробная информация платная?
+                    </p>
+                    <p class="home-question__text home-question__text_a">
+                        Во-первых, в подробном отчёте содержится полная информация из многих баз данных помимо сайта
+                        ГИБДД.РФ.
+                        <br><br>
+                        Во-вторых, для получения подробной информации мы используем сервера, которые оплачиваем.
+                        Также, информация из других баз данных стоит денег. И эти расходы мы берем на себя.
+                        <br><br>
+                        Если вы покупаете подержанный автомобиль, лучше заплатить 99 рублей, чем потом переживать об
+                        огромных
+                        затратах на ремонт неисправного транспортного средства.
+                    </p>
+                </div>
+            </section>
+            <section class="home-report">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="title title_md title_dark">
+                            Полный отчет об автомобиле за пару кликов
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <ul class="home-report__list">
+                            <li class="home-report__item">
+                                <div class="home-report__item-icon">
+                                    <img src="images/icons/home-page/time.svg" alt="">
+                                </div>
+                                <p class="home-report__item-text">
+                                    Частая проблема, с которой сталкиваются люди при покупке б/у авто - это
+                                    недостоверная или
+                                    неполная информация. Пригодный внешний вид автомобиля может скрывать серьезные
+                                    проблемы: аварии,
+                                    обременения и различные юридические проблемы.
+                                </p>
+                            </li>
+                            <li class="home-report__item">
+                                <div class="home-report__item-icon">
+                                    <img src="images/icons/home-page/alert.svg" alt="">
+                                </div>
+                                <p class="home-report__item-text">
+                                    Обязательно проверьте ТС по номеру кузова, если вы планируете покупать праворульный
+                                    автомобиль.
+                                    Если информация из отчета не соответствует тому, что вам говорит продавец, лучше
+                                    отказаться от
+                                    приобретения такого автомобиля. Последствия такой покупки могут быть непредсказуемы.
+                                </p>
+                            </li>
+                            <li class="home-report__item">
+                                <div class="home-report__item-icon">
+                                    <img src="images/icons/home-page/dialog.svg" alt="">
+                                </div>
+                                <p class="home-report__item-text">
+                                    Обязательно проверьте ТС по номеру кузова, если вы планируете покупать праворульный
+                                    автомобиль.
+                                    Если информация из отчета не соответствует тому, что вам говорит продавец, лучше
+                                    отказаться от
+                                    приобретения такого автомобиля. Последствия такой покупки могут быть непредсказуемы.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="home-questions">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="home-questions__title title title_md title_white">
+                            Частые вопросы
+                        </h2>
+                    </div>
+                    <div class="row home-questions__items">
+                        <div class="home-questions__item">
+                            <input class="home-questions__item-check" type="checkbox" id="q1">
+                            <label for="q1" class="home-questions__item-title">
+
+                                Не пришел отчет на почту. Что делать?
+                                <div class="home-questions__item-open">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </label>
+                            <div class="home-questions__item-content">
+                                VIN обязательно состоит из 17 знаков. используются только следующие символы латинского
+                                алфавита и
+                                арабские цифры:
+                                0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P R S T U V W X Y Z
+                                Использовать буквы: I, O, Q – запрещено, так как их можно спутать с цифрами 1, 0, а
+                                также перепутать
+                                между собой.
+                                VIN делится на 3 части:
+                                WMI (World Manufacturers Identification) – мировой индекс изготовителя
+                                VDS (Vehicle Description Section) – описательная часть
+                                VIS (Vehicle Identification Section) – отличительная часть
+                            </div>
+                        </div>
+                        <div class="home-questions__item">
+                            <input class="home-questions__item-check" type="checkbox" id="q3">
+                            <label for="q3" class="home-questions__item-title">
+
+                                У моей машины нет вин кода, как проверить полную информацию?
+                                <div class="home-questions__item-open">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </label>
+                            <div class="home-questions__item-content">
+                                VIN обязательно состоит из 17 знаков. используются только следующие символы латинского
+                                алфавита и
+                                арабские цифры:
+                                0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P R S T U V W X Y Z
+                                Использовать буквы: I, O, Q – запрещено, так как их можно спутать с цифрами 1, 0, а
+                                также перепутать
+                                между собой.
+                                VIN делится на 3 части:
+                                WMI (World Manufacturers Identification) – мировой индекс изготовителя
+                                VDS (Vehicle Description Section) – описательная часть
+                                VIS (Vehicle Identification Section) – отличительная часть
+                            </div>
+                        </div>
+                        <div class="home-questions__item">
+                            <input class="home-questions__item-check" type="checkbox" id="q2">
+                            <label for="q2" class="home-questions__item-title">
+
+                                Почему не читает мой vin код или госномер?
+                                <div class="home-questions__item-open">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </label>
+                            <div class="home-questions__item-content">
+                                VIN обязательно состоит из 17 знаков. используются только следующие символы латинского
+                                алфавита и
+                                арабские цифры:
+                                0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P R S T U V W X Y Z
+                                Использовать буквы: I, O, Q – запрещено, так как их можно спутать с цифрами 1, 0, а
+                                также перепутать
+                                между собой.
+                                VIN делится на 3 части:
+                                WMI (World Manufacturers Identification) – мировой индекс изготовителя
+                                VDS (Vehicle Description Section) – описательная часть
+                                VIS (Vehicle Identification Section) – отличительная часть
+                            </div>
+                        </div>
+                        <div class="home-questions__item">
+                            <input class="home-questions__item-check" type="checkbox" id="q4">
+                            <label for="q4" class="home-questions__item-title">
+
+                                Не пришел отчет на почту. Что делать?
+                                <div class="home-questions__item-open">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </label>
+                            <div class="home-questions__item-content">
+                                VIN обязательно состоит из 17 знаков. используются только следующие символы латинского
+                                алфавита и
+                                арабские цифры:
+                                0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P R S T U V W X Y Z
+                                Использовать буквы: I, O, Q – запрещено, так как их можно спутать с цифрами 1, 0, а
+                                также перепутать
+                                между собой.
+                                VIN делится на 3 части:
+                                WMI (World Manufacturers Identification) – мировой индекс изготовителя
+                                VDS (Vehicle Description Section) – описательная часть
+                                VIS (Vehicle Identification Section) – отличительная часть
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home-contacts" id="contacts">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="home-contacts__title title title_md title-dark">
+                            Контакты
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="home-contacts__col">
+                            <ul class="home-contacts__list">
+                                <li class="home-contacts__item">
+                                    ООО "Социальные технологии"
+                                </li>
+                                <li class="home-contacts__item">
+                                    ИНН: 9723159800
+                                </li>
+                                <li class="home-contacts__item">
+                                    ОГРН: 1227700396571
+                                </li>
+                            </ul>
+                            <ul class="home-contacts__list">
+                                <li class="home-contacts__item">
+                                    <address>Адрес: город Москва, 5-Я Кожуховская ул, д. 9</address>
+                                </li>
+                                <li class="home-contacts__item">
+                                    <a href="tel:#" class="home-contacts__link">Телефон: +7-903-782-99-34</a>
+                                </li>
+                                <li class="home-contacts__item">
+                                    <a href="mailto:#" class="home-contacts__link">E-mail: 1@m.ru</a>
+                                </li>
+                                <li class="home-contacts__item">
+                                    График работы: Пн-Пт с 10.00 до 18.00
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-contacts__col">
+                            <h2 class="home-contacts__title title title_md title_dark">
+                                Напишите нам
+                            </h2>
+                            <form action="#" class="home-contacts__form">
+                                <input type="text" class="input home-contacts__form-input" placeholder="Имя" />
+                                <input type="text" class="input home-contacts__form-input" placeholder="Телефон" />
+                                <textarea type="text"
+                                    class="input home-contacts__form-input home-contacts__form-message"
+                                    placeholder="Сообщение"></textarea>
+                                <button class="btn btn_dark home-contacts__form-btn" type="submit">ОТПРАВИТЬ</button>
+                                <div class="home-contacts__form-check">
+                                    <div class="home-contacts__form-check-wrapper">
+                                        <input class="home-contacts__form-check-input" type="checkbox" id="formCheck">
+                                        <span class="home-contacts__form-check-input-custom"></span>
+                                    </div>
+                                    <label for="formCheck" class="home-contacts__form-check-label">Соглашаюсь с
+                                        Политикой
+                                        конфиденциальности и обработкой персональных данных</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+@@include('parts/footer.html')

@@ -1,36 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Burger menu (Header)
+    const anchors = document.querySelectorAll("a[href*='#']");
 
-    class MainMenu {
-        constructor() {
-            this.menu = document.querySelector('.main-menu');
-            this.body = document.body;
-            this.menuBtn = document.querySelectorAll('.main-menu-btn');
-        }
+    for (let anchor of anchors) {
+        console.log(anchor);
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
 
-        openMenu = (e) => {
-            this.menu.classList.add('show');
-            this.body.classList.add('lock');
-            e.target.classList.add('collapsed');
-        }
+            const blockID = anchor.getAttribute('href').substr(1)
 
-        closeMenu = (e) => {
-            this.menu.classList.remove('show');
-            this.body.classList.remove('lock');
-            e.target.classList.remove('collapsed');
-        }
-
-        render() {
-            this.menuBtn.forEach(element => {
-                element.addEventListener('click', (e) => {
-                    if (this.menu.classList.contains('show')) {
-                        this.closeMenu(e);
-                    } else {
-                        this.openMenu(e);
-                    }
-                })
+            document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
             })
-        }
+        })
+    }
+
+    const menuItems = document.querySelectorAll('.header-menu__link');
+    const repModalBtns = document.querySelectorAll('.rep-modal__btns');
+
+    menuItems.forEach(element => {
+        element.addEventListener('click', () => {
+            document.querySelector('.burger-menu__input').checked = false;
+        })
+    });
+
+    repModalBtns.forEach(element => {
+        element.addEventListener('click', () => {
+            document.querySelector('.rep-modal').style.display = 'none';
+        })
+    });
+
+    if (document.querySelector('.rep-modal')) {
+        
     }
 });

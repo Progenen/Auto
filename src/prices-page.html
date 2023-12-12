@@ -1,0 +1,93 @@
+@@include('parts/header.html', {
+    "theme": "dark"
+});
+<section class="prices-main subscr">
+    <div class="container">
+        <div class="row">
+            <h2 class="title title_bold title_dark subscr__title">
+                Тарифы
+            </h2>
+        </div>
+        <form class="prices-main__form subscr__form">
+            <div class="row prices-main__cards subscr__cards">
+                <input type="radio" name="sub" class="prices-main__card-checkbox subscr__card-checkbox" id="sub1">
+                <label for="sub1" class="prices-main__card subscr__card">
+                    <div  class="prices-main__card-header subscr__card-header">
+
+                        <div class="prices-main__card-title subscr__card-title">
+                            Подписка «Профи»
+                        </div>
+                    </div>
+                    <div class="prices-main__card-body subscr__card-body">
+
+                        <div class="prices-main__card-price subscr__card-price">
+                            1₽<span>/первый день</span>
+                        </div>
+                        <div class="prices-main__card-descr subscr__card-descr">
+                            Далее 690 ₽ / 7 дней за 15 отчетов
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="sub" class="prices-main__card-checkbox subscr__card-checkbox" id="sub2">
+                <label for="sub2" class="prices-main__card subscr__card">
+                    <div class="prices-main__card-header subscr__card-header">
+
+                        <div class="prices-main__card-title subscr__card-title">
+                            Один отчет
+                        </div>
+                    </div>
+                    <div class="prices-main__card-body subscr__card-body">
+
+                        <div class="prices-main__card-price subscr__card-price">
+                            99₽
+                        </div>
+                        <div class="prices-main__card-descr subscr__card-descr">
+                            Для проверки одного ТС
+                        </div>
+                    </div>
+                </label>
+                
+                <input type="radio" name="sub" class="prices-main__card-checkbox subscr__card-checkbox" id="sub3">
+                <label for="sub3" class="prices-main__card subscr__card">
+                    <div class="prices-main__card-header subscr__card-header">
+
+                        <div class="prices-main__card-title subscr__card-title">
+                            Пакет из 5 отчетов
+                        </div>
+                    </div>
+                    <div class="prices-main__card-body subscr__card-body">
+
+                        <div class="prices-main__card-price subscr__card-price">
+                            369₽
+                        </div>
+                        <div class="prices-main__card-descr subscr__card-descr">
+                            Один отчет за 74 ₽
+                        </div>
+                    </div>
+                </ж>
+            </div>
+            <div class="prices-main__agree subscr__agree">
+                <div class="prices-main__agree-wrapper subscr__agree-wrapper">
+                    <div class="prices-main__agree-check subscr__agree-check check">
+                        <input type="checkbox" class="prices-main__agree-check-input subscr__agree-check-input check__input"
+                            id="subCheck1"></input>
+                        <span class="prices-main__agree-check-custom subscr__agree-check-custom check__custom"></span>
+                    </div>
+                    <label for="subCheck1">Соглашаюсь с Политикой конфиденциальности и обработкой персональных
+                        данных</label>
+                </div>
+                <div class="prices-main__agree-wrapper subscr__agree-wrapper">
+                    <div class="prices-main__agree-check subscr__agree-check check">
+                        <input type="checkbox" class="prices-main__agree-check-input subscr__agree-check-input check__input"
+                            id="subCheck2"></input>
+                        <span class="prices-main__agree-check-custom subscr__agree-check-custom check__custom"></span>
+                    </div>
+                    <label for="subCheck2">Соглашаюсь тарифами сервиса и условиями использования, ознакомлен с периодическими списаниями 690 рублей в неделю за 15 отчетов об автомобиле при оформлении подписки за 1 рубль на 1 день, далее 690 рублей в неделю</label>
+                </div>
+            </div>
+            <button class="prices-main__btn subscr__btn btn btn_dark" type="submit">КУПИТЬ</button>
+        </form>
+    </div>
+</section>
+</div>
+@@include('parts/footer.html')
